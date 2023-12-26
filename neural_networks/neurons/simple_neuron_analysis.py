@@ -22,6 +22,6 @@ for input in inputs:
 
 
 plt.plot(inputs, outputs)
-plt.title('Input/output characteristic')
+plt.title('Input/output dependence')
 plt.show()
 

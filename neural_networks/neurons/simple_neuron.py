@@ -1,12 +1,12 @@
 class Neuron:
-    def __init__(self, weights, bias):
+    def __init__(self, weights, bias = 0):
         self.weights = weights
         self.bias = bias
 
-    def forward(self, input_data):
+    def forward(self, inputs):
         weighted_sum = 0
-        for i in range(len(input_data)):
-            weighted_sum += input_data[i] * self.weights[i]
+        for i in range(len(inputs)):
+            weighted_sum += inputs[i] * self.weights[i]
         weighted_sum += self.bias
         return self.activation_function(weighted_sum)
 
